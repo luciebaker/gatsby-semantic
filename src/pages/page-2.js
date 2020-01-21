@@ -1,15 +1,44 @@
 import React from "react"
-import { Link } from "gatsby"
-
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+
+import { Segment, Container, Button, Header } from "semantic-ui-react"
 
 const SecondPage = () => (
   <Layout>
-    <SEO title="Page two" />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
+  
+  <Segment inverted color='violet'>
+  <h3>A segment inverted color: Violet</h3>
+  </Segment>
+
+  <div>
+  <Header as='h3' inverted attached='top'>
+    Attached Header (inverted)
+  </Header>
+  <Container attached>
+    With a container attached 
+    <br />
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+    commodo consequat.
+  </Container>
+<br />
+  <Button.Group>
+    <Button>Cancel</Button>
+    <Button.Or />
+    <Button positive>Save</Button>
+  </Button.Group>
+</div>
+
+
+
+  <br />
+
+
+
+
+
+
   </Layout>
 )
 
